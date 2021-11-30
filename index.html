@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornike Maghradze JS Lesson 11</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f05075e5db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<section>
+    <div class="frm-cntr">
+        <form action="" method="post" id="form">
+            <div class="tep-inpt-cntr">
+                <div>
+                    <div class="inpt-wrpr">
+                        <label for="username">User Name</label>
+                        <input type="text" name="user" id="username" placeholder="User Name">
+                        <div class="error-div" id="error_user"></div>
+                    </div>
+                    <div class="inpt-wrpr">
+                        <label for="useremail">User Email</label>
+                        <input type="email" name="useremail" id="useremail" placeholder="User Email">
+                        <div class="error-div" id="error_useremail"></div>
+                    </div>
+                </div>
+                <div>    
+                    <div class="inpt-wrpr">
+                        <label for="password">Password</label>
+                        <input type="password" name="pswrd" id="password" placeholder="password..">
+                        <div class="error-div" id="error_pswrd"></div>
+                        <i class="far fa-eye" id="eye" onclick="showpswrd()"></i>
+                        <i class="far fa-eye-slash" id="eye-slash" onclick="showpswrd()"></i>
+                    </div> 
+                    <div class="inpt-wrpr">
+                        <label for="password2">Repeat Password</label>
+                        <input type="password" name="pswrd2" id="password2" placeholder="repeat password..">
+                        <div class="error-div" id="error_pswrd2"></div>
+                        <i class="far fa-eye" id="eye2" onclick="showpswrd2()"></i>
+                        <i class="far fa-eye-slash" id="eye-slash2" onclick="showpswrd2()"></i>
+                    </div> 
+                    
+                </div>    
+            </div>    
+            <div class="inpt-radio-cntr">
+                <div class="inpt-radio">
+                    <input type="radio" name="gender" id="female">
+                    <input type="radio" name="gender" id="male">  
+                    <input type="radio" name="gender" id="rnts">
+                    
+                </div>
+                <div class="inpt-radio">
+                    <label for="female">Female</label>
+                    <label for="male">Male</label>
+                    <label for="rnts">Rather Not To Say</label>
+                </div>
+            </div>   
+            <div class="error-div" id="error_gender"></div>
+            <div class="check-cntr">
+                <input type="checkbox" name="check" id="agree">
+                <label for="check">Agree</label>
+                
+            </div>
+            <div class="error-div" id="error_check"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+
+    <script src="script11.js"></script>
+</body>
+</html>

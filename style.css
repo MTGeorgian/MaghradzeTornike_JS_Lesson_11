@@ -1,0 +1,102 @@
+body{
+    background: aquamarine;
+}
+.frm-cntr{
+    max-width: 1024px;
+    width: 95%;
+    height: 500px;
+    margin: 30px auto;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.tep-inpt-cntr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inpt-wrpr{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+.inpt-wrpr input{
+    margin-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+}
+.inpt-radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.inpt-radio input,
+.inpt-radio label{
+    margin-top: 10px;
+}
+.inpt-radio input{
+    cursor: pointer;
+}
+.inpt-radio-cntr{
+    display: flex;
+    justify-content: center;
+}
+.check-cntr{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#agree{
+    cursor: pointer;
+}
+button[type=submit]{
+   background-color:aquamarine;
+   width: 20%;
+   margin-top: 20px;
+   cursor: pointer;
+}
+button[type=submit]:active{
+    transform: scale(0.9);
+}
+label{
+    font-style: italic;
+    font-weight: bold;
+    size: 20px;
+    letter-spacing: 1px;
+}
+.error-div{
+    padding: 5px;
+    color: yellow;
+    font-size: 14px;
+    font-weight: 700;
+}
+.fa-eye,
+.fa-eye-slash{
+    position: absolute;
+    right: 17px;
+    top: 43px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.fa-eye:hover,
+.fa-eye-slash:hover{
+    opacity: 1;
+}
+.fa-eye:active,
+.fa-eye-slash:active{
+    transform: scale(0.9);
+}
